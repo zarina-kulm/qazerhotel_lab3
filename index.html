@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="kk" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QAZER Hotel — Басты бет</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #0D2935;">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-warning" href="index.html">
+      QAZER HOTEL
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+            aria-controls="menu" aria-expanded="false" aria-label="Открыть меню">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav mx-auto fw-semibold">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Басты бет</a></li>
+        <li class="nav-item"><a class="nav-link" href="rooms.html">Нөмірлер</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Қызметтер</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">Біз туралы</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Байланыс</a></li>
+      </ul>
+
+      <a href="rooms.html" class="btn btn-warning">
+        Нөмірді таңдау
+      </a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="text-center text-white py-5"
+           style="background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1600&q=80') center/cover;">
+    <div class="container py-5">
+      <h1 class="display-4 fw-bold">QAZER Hotel-ге қош келдіңіздер</h1>
+      <p class="lead">Жайлылық, ерекше сервис және демалыстың жоғары стандарты</p>
+      <a href="rooms.html" class="btn btn-warning btn-lg mt-3">Бөлмелерді көру</a>
+    </div>
+  </section>
+
+  <div class="container position-relative mt-4">
+    <div class="card card-body border-0 shadow">
+      <form id="bookingSearchForm">
+        <div class="row g-3 align-items-end">
+
+          <div class="col-12 col-md-3">
+            <label for="checkInDate" class="form-label">Келу күні</label>
+            <input type="date" id="checkInDate" class="form-control" required>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <label for="checkOutDate" class="form-label">Кету күні</label>
+            <input type="date" id="checkOutDate" class="form-control" required>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <label for="guests" class="form-label">Қонақтар</label>
+            <select id="guests" class="form-select" required>
+              <option value="1">1 Қонақ</option>
+              <option value="2" selected>2 Қонақ</option>
+              <option value="3">3 Қонақ</option>
+              <option value="4">4 Қонақ</option>
+            </select>
+          </div>
+
+          <div class="col-12 col-md-3 d-grid">
+            <button type="submit" class="btn btn-warning">Нөмір іздеу</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Неге QAZER Hotel?</h2>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="display-5">🛏️</div>
+            <h3 class="h5 fw-bold mt-2">Жайлы нөмірлер</h3>
+            <p class="text-secondary mb-0">Заманауи интерьер, ыңғайлы төсек және әр қонаққа арналған барлық қолайлылық.</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="display-5">🍽️</div>
+            <h3 class="h5 fw-bold mt-2">Ерекше сервис</h3>
+            <p class="text-secondary mb-0">Лаундж, жеке консьерж және қонақтарға арналған қосымша қызметтер.</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="display-5">📍</div>
+            <h3 class="h5 fw-bold mt-2">Қала орталығында</h3>
+            <p class="text-secondary mb-0">Алматының қақ ортасында, негізгі көрікті жерлерге жақын орналасқан.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 text-center text-white bg-dark">
+    <div class="container">
+      <h2 class="fw-bold">Демалысыңызды бүгін жоспарлаңыз</h2>
+      <p class="mb-4">Өзіңізге ұнайтын нөмірді таңдап, брондаңыз.</p>
+      <a href="rooms.html" class="btn btn-warning btn-lg">Нөмірлерді көру</a>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-white border-top py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-3 mb-3">
+        <h5>QAZER HOTEL</h5>
+        <p>Алматы қ., Жандосова 55</p>
+      </div>
+
+      <div class="col-6 col-md-3 mb-3">
+        <h6>Беттер</h6>
+        <a class="d-block" href="rooms.html">Нөмірлер</a>
+        <a class="d-block" href="services.html">Қызметтер</a>
+      </div>
+
+      <div class="col-6 col-md-3 mb-3">
+        <h6>Байланыс</h6>
+        <p>+7 (777)-622-56-51<br>info@qazer.kz</p>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <h6>Желілер</h6>
+        <p>Instagram / Facebook</p>
+      </div>
+    </div>
+
+    <p class="text-center text-secondary mb-0">&copy; 2026 QAZER Hotel Almaty</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const bookingForm = document.getElementById("bookingSearchForm");
+  const checkInInput = document.getElementById("checkInDate");
+  const checkOutInput = document.getElementById("checkOutDate");
+  const guestsInput = document.getElementById("guests");
+
+  function toLocalISO(date) {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+  }
+
+  function nextDay(value) {
+    const [year, month, day] = value.split("-").map(Number);
+    return toLocalISO(new Date(year, month - 1, day + 1));
+  }
+
+  function setMinimumDates() {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    const todayString = toLocalISO(today);
+    checkInInput.min = todayString;
+
+    if (checkInInput.value && checkInInput.value >= todayString) {
+      checkOutInput.min = nextDay(checkInInput.value);
+    } else {
+      checkOutInput.min = nextDay(todayString);
+    }
+  }
+
+  setMinimumDates();
+
+  checkInInput.addEventListener("change", function () {
+    if (!this.value) {
+      setMinimumDates();
+      return;
+    }
+
+    checkOutInput.min = nextDay(this.value);
+
+    if (checkOutInput.value && checkOutInput.value < checkOutInput.min) {
+      checkOutInput.value = "";
+    }
+  });
+
+  bookingForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    setMinimumDates();
+
+    const checkIn = checkInInput.value;
+    const checkOut = checkOutInput.value;
+    const guests = guestsInput.value;
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const todayString = toLocalISO(today);
+
+    if (!checkIn || !checkOut) {
+      alert("Келу және кету күндерін таңдаңыз.");
+      return;
+    }
+
+    if (checkIn < todayString) {
+      alert("Өткен күнді таңдау мүмкін емес.");
+      return;
+    }
+
+    if (checkOut <= checkIn) {
+      alert("Кету күні келу күнінен кейін болуы керек.");
+      return;
+    }
+
+    localStorage.setItem("checkInDate", checkIn);
+    localStorage.setItem("checkOutDate", checkOut);
+    localStorage.setItem("guestCount", guests);
+
+    window.location.href = "rooms.html";
+  });
+</script>
+
+</body>
+</html>

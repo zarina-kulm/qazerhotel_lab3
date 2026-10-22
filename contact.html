@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="kk" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QAZER Hotel — Байланыс</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<!-- Навигация -->
+<nav class="navbar navbar-expand-lg sticky-top shadow-sm" style="background-color: #0D2935;" data-bs-theme="dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-uppercase fs-4 text-warning" href="index.html">
+      QAZER Hotel
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#menu" aria-controls="menu"
+            aria-expanded="false" aria-label="Ашық мәзір">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav mx-auto fw-semibold">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Басты бет</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rooms.html">Нөмірлер</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Қызметтер</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Біз туралы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="contact.html">Байланыс</a>
+        </li>
+      </ul>
+
+      <a href="rooms.html" class="btn btn-warning">Нөмірді таңдау</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <!-- Баннер -->
+  <section class="text-center text-white py-5"
+           style="background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1600&q=80') center/cover;">
+    <div class="container py-5">
+      <p class="text-uppercase fw-semibold mb-2">QAZER Hotel Almaty</p>
+      <h1 class="display-4 fw-bold">Бізбен байланысыңыз</h1>
+      <p class="lead mb-0">Сұрақтарыңыз болса, біз сізге көмектесуге дайынбыз.</p>
+    </div>
+  </section>
+
+  <!-- Байланыс ақпараты және форма -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+
+        <div class="col-12 col-lg-5">
+          <h2 class="fw-bold mb-3">Байланыс ақпараты</h2>
+          <p class="text-secondary mb-4">
+            Қонақүй туралы қосымша ақпарат алу немесе сұрақ қою үшін бізбен байланысыңыз.
+          </p>
+
+          <div class="card border-0 shadow-sm mb-3">
+            <div class="card-body p-4">
+              <div class="d-flex gap-3">
+                <div class="fs-3">📍</div>
+                <div>
+                  <h3 class="h6 fw-bold">Мекенжайымыз</h3>
+                  <p class="text-secondary mb-0">Алматы қ., Жандосова 55</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-0 shadow-sm mb-3">
+            <div class="card-body p-4">
+              <div class="d-flex gap-3">
+                <div class="fs-3">📞</div>
+                <div>
+                  <h3 class="h6 fw-bold">Телефон</h3>
+                  <a href="tel:+77776225651" class="text-secondary text-decoration-none">
+                    +7 (777)-622-56-51
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex gap-3">
+                <div class="fs-3">✉️</div>
+                <div>
+                  <h3 class="h6 fw-bold">Электрондық пошта</h3>
+                  <a href="mailto:info@qazer.kz" class="text-secondary text-decoration-none">
+                    info@qazer.kz
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Хабарлама формасы -->
+        <div class="col-12 col-lg-7">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body p-4 p-md-5">
+              <h2 class="fw-bold mb-2">Бізге хабарлама жіберіңіз</h2>
+              <p class="text-secondary mb-4">
+                Төмендегі форманы толтырыңыз.
+              </p>
+
+              <form id="contactForm">
+                <div class="mb-3">
+                  <label for="contactName" class="form-label">Аты-жөніңіз</label>
+                  <input
+                          type="text"
+                          id="contactName"
+                          class="form-control"
+                          placeholder="Аты-жөніңізді енгізіңіз"
+                          autocomplete="name"
+                          required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="contactEmail" class="form-label">E-mail мекенжайыңыз</label>
+                  <input
+                          type="email"
+                          id="contactEmail"
+                          class="form-control"
+                          placeholder="example@email.com"
+                          autocomplete="email"
+                          required>
+                </div>
+
+                <div class="mb-4">
+                  <label for="contactMessage" class="form-label">Хабарламаңыз</label>
+                  <textarea
+                          id="contactMessage"
+                          class="form-control"
+                          rows="5"
+                          placeholder="Хабарламаңызды жазыңыз..."
+                          required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-warning btn-lg w-100">
+                  Хабарлама жіберу
+                </button>
+
+                <div id="formFeedback" class="alert alert-success mt-3 mb-0 d-none" role="status"></div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Қосымша шақыру -->
+  <section class="py-5 text-center text-white bg-dark">
+    <div class="container">
+      <h2 class="fw-bold">QAZER Hotel-де демалысыңызды жоспарлаңыз</h2>
+      <p class="mb-4">Өзіңізге ұнайтын нөмірді таңдап, бізге келіңіз.</p>
+      <a href="rooms.html" class="btn btn-warning btn-lg">Нөмірлерді көру</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- Футер -->
+<footer class="bg-white border-top py-4">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 col-md-3 mb-3">
+        <h5 class="fw-bold">QAZER HOTEL</h5>
+        <p class="text-secondary">Алматы қ., Жандосова 55</p>
+      </div>
+
+      <div class="col-6 col-md-3 mb-3">
+        <h6 class="fw-bold">Беттер</h6>
+        <a class="d-block text-secondary mb-1" href="index.html">Басты бет</a>
+        <a class="d-block text-secondary mb-1" href="rooms.html">Нөмірлер</a>
+        <a class="d-block text-secondary" href="services.html">Қызметтер</a>
+      </div>
+
+      <div class="col-6 col-md-3 mb-3">
+        <h6 class="fw-bold">Байланыс</h6>
+        <p class="text-secondary mb-1">+7 (777)-622-56-51</p>
+        <p class="text-secondary mb-0">info@qazer.kz</p>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <h6 class="fw-bold">Желілер</h6>
+        <p class="text-secondary mb-0">Instagram / Facebook</p>
+      </div>
+
+    </div>
+
+    <hr>
+    <p class="text-center text-secondary mb-0">
+      &copy; 2026 QAZER Hotel Almaty. Барлық құқықтар қорғалған.
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const contactForm = document.getElementById("contactForm");
+  const formFeedback = document.getElementById("formFeedback");
+
+  contactForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    if (!contactForm.checkValidity()) {
+      contactForm.reportValidity();
+      return;
+    }
+
+    formFeedback.textContent =
+      "Форма тексерілді. Бұл демо-нұсқа: хабарлама серверге жіберілген жоқ.";
+    formFeedback.classList.remove("d-none");
+
+    contactForm.reset();
+  });
+</script>
+
+</body>
+</html>

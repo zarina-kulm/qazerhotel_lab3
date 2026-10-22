@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="kk" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QAZER Hotel — Нөмірлер</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<!-- Navigation -->
+<<nav class="navbar navbar-expand-lg sticky-top shadow-sm"
+      style="background-color: #0D2935;"
+      data-bs-theme="dark">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold fs-4 text-warning"
+       href="index.html">QAZER Hotel</a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#mainMenu"
+            aria-controls="mainMenu" aria-expanded="false"
+            aria-label="Мәзірді ашу">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainMenu">
+      <ul class="navbar-nav mx-auto fw-semibold">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Басты бет</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page"
+             href="rooms.html">Нөмірлер</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Қызметтер</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Біз туралы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Байланыс</a>
+        </li>
+      </ul>
+
+      <a href="#rooms" class="btn btn-warning fw-semibold">
+        Брондау
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Page banner with background photo -->
+<header
+        class="text-white text-center py-5"
+        style="background: linear-gradient(rgba(0,0,0,.58), rgba(0,0,0,.58)), url('https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80') center/cover no-repeat;"
+>
+  <div class="container py-4">
+    <h1 class="display-5 fw-bold">Қолжетімді нөмірлер</h1>
+    <p class="lead mb-0">
+      Өзіңізге ұнаған бөлмені таңдап, брондауға өтіңіз
+    </p>
+  </div>
+</header>
+
+<!-- Room cards -->
+<main class="py-5" id="rooms">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+      <!-- Standard Room -->
+      <div class="col">
+        <article class="card h-100 border-0 shadow-sm">
+
+          <div class="ratio ratio-4x3">
+            <img
+                    src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80"
+                    class="w-100 h-100 object-fit-cover"
+                    alt="Standard Room">
+          </div>
+
+          <div class="card-body d-flex flex-column p-4">
+            <h2 class="h4 card-title fw-bold">Standard Room</h2>
+
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge text-bg-light">Wi-Fi</span>
+              <span class="badge text-bg-light">A/C</span>
+              <span class="badge text-bg-light">TV</span>
+              <span class="badge text-bg-light">Minibar</span>
+            </div>
+
+            <p class="card-text text-secondary">
+              Қонақтарға жайлы тұруға арналған ыңғайлы әрі функционалды
+              нөмір. Нөмірде жайлы төсек, жұмыс үстелі және душы бар
+              жеке жуынатын бөлме қарастырылған. Қонақтарға кондиционер,
+              жалпақ экранды теледидар, тегін Wi-Fi және шай дайындауға
+              арналған шағын аймақ ұсынылады. Нөмірдің тыныш әрі жайлы
+              атмосферасы ұзақ күннен кейін демалуға өте қолайлы.
+            </p>
+
+            <div class="mt-auto">
+              <p class="fs-4 fw-bold mb-3">
+                49 400 ₸
+                <span class="fs-6 fw-normal text-secondary">/ түн</span>
+              </p>
+
+              <button
+                      type="button"
+                      class="btn btn-warning w-100 fw-semibold"
+                      onclick="selectRoom('Standard Room', 49400)">
+                Брондау
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Deluxe Room -->
+      <div class="col">
+        <article class="card h-100 border-0 shadow-sm">
+
+          <div class="position-relative">
+            <div class="ratio ratio-4x3">
+              <img
+                      src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=600&q=80"
+                      class="w-100 h-100 object-fit-cover"
+                      alt="Deluxe Room">
+            </div>
+
+            <span class="badge text-bg-warning position-absolute top-0 end-0 m-3">
+              Хит
+            </span>
+          </div>
+
+          <div class="card-body d-flex flex-column p-4">
+            <h2 class="h4 card-title fw-bold">Deluxe Room</h2>
+
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge text-bg-light">Wi-Fi</span>
+              <span class="badge text-bg-light">A/C</span>
+              <span class="badge text-bg-light">TV</span>
+            </div>
+
+            <p class="card-text text-secondary">
+              Заманауи интерьері бар кең әрі жарық нөмір жайлылық пен
+              әсемдікті үйлестіреді. Нөмірде үлкен төсек, ыңғайлы жұмыс
+              аймағы және ваннасы бар жуынатын бөлме орналасқан.
+              Қонақтарға кондиционер, жалпақ экранды теледидар, тегін
+              Wi-Fi және кофе машинасы ұсынылады. Нөмірдің басты
+              ерекшелігі — демалып, тыныш уақыт өткізуге арналған
+              жайлы демалыс аймағы.
+            </p>
+
+            <div class="mt-auto">
+              <p class="fs-4 fw-bold mb-3">
+                74 400 ₸
+                <span class="fs-6 fw-normal text-secondary">/ түн</span>
+              </p>
+
+              <button
+                      type="button"
+                      class="btn btn-warning w-100 fw-semibold"
+                      onclick="selectRoom('Deluxe Room', 74400)">
+                Осыны брондау
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Executive Suite -->
+      <div class="col">
+        <article class="card h-100 border-0 shadow-sm">
+
+          <div class="position-relative">
+            <div class="ratio ratio-4x3">
+              <img
+                      src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80"
+                      class="w-100 h-100 object-fit-cover"
+                      alt="Executive Suite">
+            </div>
+
+            <span class="badge text-bg-warning position-absolute top-0 end-0 m-3">
+              Жаңа
+            </span>
+          </div>
+
+          <div class="card-body d-flex flex-column p-4">
+            <h2 class="h4 card-title fw-bold">Executive Suite</h2>
+
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge text-bg-light">Wi-Fi</span>
+              <span class="badge text-bg-light">A/C</span>
+              <span class="badge text-bg-light">TV</span>
+            </div>
+
+            <p class="card-text text-secondary">
+              Премиум деңгейдегі люкс нөмір барынша жайлылық пен жеке
+              кеңістікті бағалайтын қонақтарға арналған. Нөмірде бөлек
+              жатын бөлме, кең қонақ бөлмесі, жұмыс аймағы және ваннасы
+              бар жуынатын бөлме қарастырылған. Қонақтар арнайы лаундж
+              қызметін пайдалана алады. Лаунджда жеңіл тағамдар мен
+              десерттер, кешкі тағамдар, алкогольді және алкогольсіз
+              сусындар ұсынылады. Сонымен қатар жеке консьерж қызметі,
+              газеттер және тегін Wi-Fi қолжетімді. Нөмір кондиционермен,
+              кофе машинасымен және жалпақ экранды теледидармен жабдықталған.
+            </p>
+
+            <div class="mt-auto">
+              <p class="fs-4 fw-bold mb-3">
+                95 400 ₸
+                <span class="fs-6 fw-normal text-secondary">/ түн</span>
+              </p>
+
+              <button
+                      type="button"
+                      class="btn btn-warning w-100 fw-semibold"
+                      onclick="selectRoom('Executive Suite', 95400)">
+                Осыны брондау
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- Booking call to action -->
+<section class="bg-dark text-white text-center py-5">
+  <div class="container">
+    <h2 class="fw-bold">Демалысыңызды бүгін жоспарлаңыз</h2>
+    <p class="text-white-50">
+      Өзіңізге ұнайтын нөмірді таңдап, брондаңыз.
+    </p>
+    <a href="index.html" class="btn btn-warning btn-lg">
+      Басты бетке оралу
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white border-top py-4">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <h2 class="h5 fw-bold">QAZER HOTEL</h2>
+        <p class="text-secondary">Алматы қ., Жандосова 55</p>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3">
+        <h2 class="h6 fw-bold">Беттер</h2>
+        <a class="d-block link-secondary mb-2" href="index.html">Басты бет</a>
+        <a class="d-block link-secondary mb-2" href="rooms.html">Нөмірлер</a>
+        <a class="d-block link-secondary" href="services.html">Қызметтер</a>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3">
+        <h2 class="h6 fw-bold">Байланыс</h2>
+        <p class="mb-1">+7 (777)-622-56-51</p>
+        <a class="link-secondary" href="mailto:info@qazer.kz">
+          info@qazer.kz
+        </a>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <h2 class="h6 fw-bold">Желілер</h2>
+        <p class="text-secondary">Instagram / Facebook</p>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <p class="text-center text-secondary small mb-0">
+      &copy; 2026 QAZER Hotel Almaty. Барлық құқықтар қорғалған.
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  function selectRoom(name, price) {
+    localStorage.setItem("selectedRoomName", name);
+    localStorage.setItem("selectedRoomPrice", Number(price));
+
+    // Даты и количество гостей остаются в localStorage.
+    window.location.href = "checkout.html";
+  }
+</script>
+
+</body>
+</html>
